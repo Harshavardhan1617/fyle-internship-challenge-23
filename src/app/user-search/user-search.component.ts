@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-search.component.scss']
 })
 export class UserSearchComponent {
-
+  
 }
