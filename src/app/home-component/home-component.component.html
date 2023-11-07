@@ -5,19 +5,14 @@
     <app-user-info [userinfo]="userinfo"></app-user-info>
 </section>
 <section class="repoList">
-    <!-- <ul>
-        <li>
-            <app-repository-list 
-                *ngFor="let repo of repolist" [repolist]="repo">
-            </app-repository-list>
-        </li>
-    </ul> -->
-    <!-- my-component.html -->
-    <ul>
-        <li *ngFor="let repo of repolist | paginate: { itemsPerPage: 10, currentPage: p }">
-            <app-repository-list [repolist]="repo"></app-repository-list>
-        </li>
-    </ul>
-    <pagination-controls (pageChange)="p = $event"></pagination-controls>
-  
+    <div class="repositoryLists flex flex-col">
+        <ul class="flex flex-wrap">
+            <li *ngFor="let repo of repolist | paginate: { itemsPerPage: 10, currentPage: p }">
+                <app-repository-list [repolist]="repo"></app-repository-list>
+            </li>
+        </ul>
+        <div class="pagein flex items-center justify-center h-16 my-20">
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        </div>
+    </div>
 </section>

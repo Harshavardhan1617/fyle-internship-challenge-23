@@ -1,4 +1,4 @@
-<div class="repositoryLists flex">
+<!-- <div class="repositoryLists flex">
     <div class="repoItem flex-initial bg-white text-blue-700 p-4 rounded border-blue-400 border-2 m-8 flex flex-col">
         <p class="text-2xl font-extrabold text-blue-500">{{repolist.name}}</p>
         <p class="m-2 text-black">{{repolist.description}}</p>
@@ -6,5 +6,15 @@
             <span *ngFor="let topic of repolist.topics" class="bg-blue-500 text-white p-2 rounded mr-2">{{topic}}</span>
         </div>
     </div>
+</div> -->
+
+
+<div class="repoItem flex-initial bg-white text-blue-700 p-4 rounded border-blue-400 border-2 m-8 flex flex-col">
+    <p class="text-2xl font-extrabold text-blue-500">{{repolist.name}}</p>
+    <p class="m-2 text-black">{{repolist.description}}</p>
+    <div class="my-4">
+        <span *ngFor="let topic of repolist.topics" class="bg-blue-500 text-white p-2 rounded mr-2">{{topic}}</span>
+    </div>
 </div>
+
 
