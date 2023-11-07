@@ -7,6 +7,7 @@ import { UserSearchComponent } from './user-search/user-search.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { RepositoryListComponent } from './repository-list/repository-list.component';
 import { RepositoryDescriptionComponent } from './repository-description/repository-description.component';
+import { HomeComponentComponent } from './home-component/home-component.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RepositoryDescriptionComponent } from './repository-description/reposit
     UserSearchComponent,
     UserInfoComponent,
     RepositoryListComponent,
-    RepositoryDescriptionComponent
+    RepositoryDescriptionComponent,
+    HomeComponentComponent
   ],
   imports: [
     BrowserModule,
