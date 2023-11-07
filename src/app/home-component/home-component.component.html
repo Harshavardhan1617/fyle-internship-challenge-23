@@ -4,6 +4,15 @@
 <section class="user-details">
     <app-user-info [userinfo]="userinfo"></app-user-info>
 </section>
+<!-- <section class="repoList">
+    <app-repository-list 
+    *ngFor="let repo of repolist"
+    [repo]="repo">
+    </app-repository-list>
+</section> -->
 <section class="repoList">
-    <app-repository-list [repolist]="repolist"></app-repository-list>
+    <app-repository-list 
+    *ngFor="let repo of repolist"
+    [repolist]="repo">
+    </app-repository-list>
 </section>
