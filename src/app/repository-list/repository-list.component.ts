@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Repositorylist } from '../repositorylist';
 
 @Component({
   selector: 'app-repository-list',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./repository-list.component.scss']
 })
 export class RepositoryListComponent {
-
+  @Input() repolist!: Repositorylist;
 }

@@ -1,1 +1,13 @@
-<p>repository-list works!</p>
+<div class="repositoryLists flex">
+    <div class="repoItem">
+        <p>{{repolist.id}}</p>
+    </div>
+</div>
+
+<div>
+    <h1>Repository Information</h1>
+    <!-- <p>{{repolist.id}}</p> -->
+    <p>{{repolist.name}}</p>
+    <p>{{repolist.description}}</p>
+    <p>{{repolist.topics?.join(', ')}}</p>
+  </div>

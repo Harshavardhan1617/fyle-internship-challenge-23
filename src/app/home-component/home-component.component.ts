@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UserInfo } from '../user-info';
+import { Repositorylist } from '../repositorylist';
 
 @Component({
   selector: 'app-home-component',
@@ -14,5 +15,15 @@ export class HomeComponentComponent {
     location: null,
     bio: "Aspiring Web Developer",
     twitter_username: null
-    }
+  }
+
+  repolist: Repositorylist = {
+    id: 714115426,
+    name: "fyle-internship-challenge-23",
+    description: "blah blah",
+    topics: ["angular", "html", "tailwind"]
+  }
+
+
+
 }
