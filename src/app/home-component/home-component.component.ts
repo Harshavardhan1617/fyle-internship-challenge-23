@@ -10,7 +10,7 @@ import { Repositorylist } from '../repositorylist';
 export class HomeComponentComponent {
 
   userinfo: UserInfo = {
-    avatar_url: "https://avatars.githubusercontent.com/u/1202528?v=4",
+    avatar_url: "https://avatars.githubusercontent.com/u/117501164?v=4",
     html_url: "https://github.com/Harshavardhan1617",
     name: "HarshaVardhan",
     location: "Hyderabad",
