@@ -4,15 +4,20 @@
 <section class="user-details">
     <app-user-info [userinfo]="userinfo"></app-user-info>
 </section>
-<!-- <section class="repoList">
-    <app-repository-list 
-    *ngFor="let repo of repolist"
-    [repo]="repo">
-    </app-repository-list>
-</section> -->
 <section class="repoList">
-    <app-repository-list 
-    *ngFor="let repo of repolist"
-    [repolist]="repo">
-    </app-repository-list>
+    <!-- <ul>
+        <li>
+            <app-repository-list 
+                *ngFor="let repo of repolist" [repolist]="repo">
+            </app-repository-list>
+        </li>
+    </ul> -->
+    <!-- my-component.html -->
+    <ul>
+        <li *ngFor="let repo of repolist | paginate: { itemsPerPage: 10, currentPage: p }">
+            <app-repository-list [repolist]="repo"></app-repository-list>
+        </li>
+    </ul>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  
 </section>

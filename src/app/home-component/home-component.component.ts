@@ -8,6 +8,7 @@ import { Repositorylist } from '../repositorylist';
   styleUrls: ['./home-component.component.scss']
 })
 export class HomeComponentComponent {
+
   userinfo: UserInfo = {
     avatar_url: "https://avatars.githubusercontent.com/u/1202528?v=4",
     html_url: "https://github.com/Harshavardhan1617",
@@ -16,6 +17,9 @@ export class HomeComponentComponent {
     bio: "Aspiring Web Developer Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro sit laudantium.",
     twitter_username: "harshabird34"
   }
+
+  page: number = 1;
+  itemsPerPage: number = 10;
 
   repolist: Repositorylist[] = [
 
@@ -210,4 +214,8 @@ export class HomeComponentComponent {
       "topics": []
     }
   ]
+
+  p: number = 1;
+
+
 }
