@@ -1,9 +1,18 @@
-<div class="userInfo">
-    <div class="profilePic">
-        <img src="{{userinfo.avatar_url}}" alt="">
-        <a href="{{userinfo.html_url}}">{{userinfo.html_url}}</a>
+<div class="userInfo flex flex-wrap">
+    <div class="profilePic flex-initial">
+        <div class="rounded-full border border-double border-8 border-gray-300 overflow-hidden flex flex-col items-center w-60 h-60 mx-14 my-8">
+            <img src="{{userinfo.avatar_url}}" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="mx-8">
+            <a href="{{userinfo.html_url}}">{{userinfo.html_url}}</a>
+        </div>
     </div>
-    <div class="info">
-        <h2>{{userinfo.name}}</h2>
+    <div class="empty w-40 h-40 flex-initial"></div>
+    <div class="info mx-32 my-16 flex-auto">
+        <h2 class="text-2xl font-medium my-1.5">{{userinfo.name}}</h2>
+        <p>{{userinfo.bio}}</p>
+        <p>{{userinfo.location}}</p>
+        <p>{{userinfo.twitter_username}}</p>
     </div>
 </div>
+
