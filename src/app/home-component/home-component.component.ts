@@ -12,18 +12,16 @@ export class HomeComponentComponent {
     avatar_url: "https://avatars.githubusercontent.com/u/117501164?v=4",
     html_url: "https://github.com/Harshavardhan1617",
     name: "HarshaVardhan",
-    location: null,
+    location: "Hyderabad",
     bio: "Aspiring Web Developer",
-    twitter_username: null
+    twitter_username: "harshabird34"
   }
 
   repolist: Repositorylist = {
     id: 714115426,
     name: "fyle-internship-challenge-23",
-    description: "blah blah",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro sit laudantium.",
     topics: ["angular", "html", "tailwind"]
   }
-
-
 
 }

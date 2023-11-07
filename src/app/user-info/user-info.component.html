@@ -4,15 +4,20 @@
             <img src="{{userinfo.avatar_url}}" alt="" class="w-full h-full object-cover">
         </div>
         <div class="mx-8">
-            <a href="{{userinfo.html_url}}">{{userinfo.html_url}}</a>
+            <a href="{{userinfo.html_url}}"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-link" viewBox="0 0 20 20">
+                <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+                <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+              </svg>{{userinfo.html_url}}</a>
         </div>
     </div>
-    <div class="empty w-40 h-40 flex-initial"></div>
-    <div class="info mx-32 my-16 flex-auto">
+    <!-- <div class="empty w-40 h-40 flex-initial"></div> -->
+    <div class="info mx-20 my-12 flex-auto">
         <h2 class="text-2xl font-medium my-1.5">{{userinfo.name}}</h2>
         <p>{{userinfo.bio}}</p>
-        <p>{{userinfo.location}}</p>
-        <p>{{userinfo.twitter_username}}</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>  {{userinfo.location}}</p>
+        <p>twitter: https://twitter.com/{{userinfo.twitter_username}}</p>
     </div>
 </div>
 
